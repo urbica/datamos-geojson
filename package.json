@@ -1,0 +1,29 @@
+{
+  "name": "datamos-geojson",
+  "version": "1.0.0",
+  "description": "Small tool to download and convert geoJSON files from data.mos.ru",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/urbica/datamos-geojson.git"
+  },
+  "keywords": [
+    "datamos",
+    "geojson"
+  ],
+  "author": "Andrey Karmatsky",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/urbica/datamos-geojson/issues"
+  },
+  "homepage": "https://github.com/urbica/datamos-geojson#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "prompt": "^1.0.0",
+    "request": "^2.82.0"
+  }
+}
