@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/urbica/datamos-geojson#readme",
   "dependencies": {
+    "mkdirp": "0.5.1",
     "prompt": "1.0.0",
     "request": "2.82.0"
   }

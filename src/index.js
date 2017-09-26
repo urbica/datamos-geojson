@@ -1,5 +1,6 @@
 var request = require("request"),
     fs = require('fs'),
+    mkdirp = require('mkdirp'),
     prompt = require('prompt'),
     schema = {
       properties: {
@@ -17,7 +18,11 @@ var request = require("request"),
 
 getPropmt = (err, res) => {
   if(err) console.log(err);
-  if(!res.outputFile) { res.outputFile = './output/'+res.datasetID+'.geojson'}
+  if(!res.outputFile) {
+    res.outputFile = './output/'+res.datasetID+'.geojson'
+    mkdirp('./output/', (err) => { if(err) { console.log(err); } });
+
+  }
   dataRequest(res.datasetID, res.outputFile);
 }
 
