@@ -15,6 +15,9 @@
     "datamos",
     "geojson"
   ],
+  "bin": {
+    "datamos-geojson": "node src/index.js"
+  },
   "author": "Andrey Karmatsky",
   "license": "MIT",
   "bugs": {
@@ -22,8 +25,7 @@
   },
   "homepage": "https://github.com/urbica/datamos-geojson#readme",
   "dependencies": {
-    "fs": "0.0.1-security",
-    "prompt": "^1.0.0",
-    "request": "^2.82.0"
+    "prompt": "1.0.0",
+    "request": "2.82.0"
   }
 }
