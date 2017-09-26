@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var request = require("request"),
     fs = require('fs'),
     mkdirp = require('mkdirp'),

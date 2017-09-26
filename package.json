@@ -16,7 +16,7 @@
     "geojson"
   ],
   "bin": {
-    "datamos-geojson": "node src/index.js"
+    "datamos-geojson": "./src/index.js"
   },
   "author": "Andrey Karmatsky",
   "license": "MIT",
