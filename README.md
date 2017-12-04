@@ -2,6 +2,8 @@ Small command line tool to download and convert geoJSON files (to the right stru
 
 # Installation
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/urbica/datamos-geojson.svg)](https://greenkeeper.io/)
+
 With [npm](http://npmjs.org) do:
 
 ```
