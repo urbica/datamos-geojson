@@ -29,7 +29,7 @@ getPropmt = (err, res) => {
 }
 
 dataRequest = (datasetID, outputFile) => {
-  var url = 'http://api.data.mos.ru/v1/datasets/' + datasetID + '/features?';
+  var url = 'http://apidata.mos.ru/v1/datasets/' + datasetID + '/features?';
   console.log("Request...");
   request({
         url: url,
