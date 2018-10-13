@@ -15,8 +15,9 @@ Type:
 ```
 datamos-geojson
 ```  
-Then input two values:  
+Then input three values:  
 ```
 prompt: datasetID:  [for example '912']
+API key (register and get your own API key here: apidata.mos.ru):
 prompt: Output filename, keep empty for default value [./output/DatasetID.geojson]:
 ```
