@@ -6,11 +6,16 @@ var request = require("request"),
     prompt = require('prompt'),
     schema = {
       properties: {
-        datasetID: {
+      datasetID: {
           pattern: /^[0-9\s\-]+$/,
           message: 'Dataset ID (must be a number):',
           required: true
-        },
+      },
+      apiKey: {
+          pattern: /^[a-zA-Z0-9]+/,
+          message: 'API key (register and get your own API key here: apidata.mos.ru):',
+          required: true
+      },
       outputFile: {
         message: 'Output filename, keep empty for default value [./output/DatasetID.geojson]'
       }
@@ -25,11 +30,11 @@ getPropmt = (err, res) => {
     mkdirp('./output/', (err) => { if(err) { console.log(err); } });
 
   }
-  dataRequest(res.datasetID, res.outputFile);
+  dataRequest(res.datasetID, res.outputFile, res.apiKey);
 }
 
-dataRequest = (datasetID, outputFile) => {
-  var url = 'http://apidata.mos.ru/v1/datasets/' + datasetID + '/features?';
+dataRequest = (datasetID, outputFile, apiKey) => {
+  var url = 'http://apidata.mos.ru/v1/datasets/' + datasetID + '/features?api_key=' + apiKey;
   console.log("Request...");
   request({
         url: url,
